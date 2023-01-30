@@ -8,7 +8,7 @@ const Menu = ({ cat }) => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:6060/api/posts/?cat=${cat}`
+          `https://mern-blog-3jyl.onrender.com/api/posts/?cat=${cat}`
         );
         setPosts(res.data);
       } catch (err) {
