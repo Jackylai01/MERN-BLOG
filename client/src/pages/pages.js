@@ -14,7 +14,7 @@ const Pages = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:6060/api/posts/find/${cat}`
+          `https://mern-blog-3jyl.onrender.com/api/posts/find/${cat}`
         );
         setPosts(res.data.data);
       } catch (err) {
