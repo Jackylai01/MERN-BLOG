@@ -22,7 +22,7 @@ const Single = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`http://localhost:6060/api/posts/${id}`);
+        const res = await axios.get(`https://mern-blog-3jyl.onrender.com/api/posts/${id}`);
         setPost(res.data);
       } catch (err) {
         setError(err);
@@ -34,7 +34,7 @@ const Single = () => {
   //刪除貼文
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:6060/api/posts/${id}`);
+      await axios.delete(`https://mern-blog-3jyl.onrender.com/api/posts/${id}`);
       window.alert("刪除成功");
       navigate("/");
     } catch (err) {
