@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const getAllData = async () => {
       try {
-        const res = await axios.get(`http://localhost:6060/api/posts`);
+        const res = await axios.get(`https://mern-blog-3jyl.onrender.com/api/posts`);
         setAllData(res.data);
       } catch (err) {
         setError(err);
