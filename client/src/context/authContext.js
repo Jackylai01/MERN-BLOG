@@ -13,7 +13,7 @@ export const AuthContexProvider = ({ children }) => {
   //登入
   const login = async (inputs) => {
     const res = await axios.post(
-      "http://localhost:6060/api/auth/login",
+      "https://mern-blog-3jyl.onrender.com/api/auth/login",
       inputs
     );
     setCurrentUser(res.data.accessToken);
