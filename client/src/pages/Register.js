@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 import axios from "axios";
 
-const APIURL = "http://localhost:6060/api";
+const APIURL = "https://mern-blog-3jyl.onrender.com/api";
 
 const Register = () => {
   const [inputs, setInputs] = useState({
