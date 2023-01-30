@@ -25,7 +25,7 @@ const Write = () => {
       const formData = new FormData();
       formData.append("file", file);
       const res = await axios.post(
-        "http://localhost:6060/api/upload",
+        "https://mern-blog-3jyl.onrender.com/api/upload",
         formData
       );
       return res.data;
@@ -40,7 +40,7 @@ const Write = () => {
     const imgUrl = await upload();
     try {
       state
-        ? await axios.put(`http://localhost:6060/api/posts/${state._id}`, {
+        ? await axios.put(`https://mern-blog-3jyl.onrender.com/api/posts/${state._id}`, {
             title,
             desc: value,
             cat,
