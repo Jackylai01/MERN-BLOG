@@ -1,7 +1,7 @@
 # MERN-BLOG-簡易部落格製作
 
 
-* 使用React-useContext來實現Auth狀態管理的功能
+* 使用useContext來實現Auth狀態管理的功能
 * react-quill實現文字編譯器的功能
 
 ```bash
